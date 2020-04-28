@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
   var downloadLink = {
-    'mac': 'https://github.com/ripplefox/ripplewallet/releases/download/v1.0.0/FoxletRipple-1.0.0-mac-x64.zip',
-    'win': 'https://github.com/ripplefox/ripplewallet/releases/download/v1.0.0/FoxletRipple-1.0.0-win-x86.zip',
+    'mac': 'https://github.com/ripplefox/ripplewallet/releases/download/v2.0.0/FoxletRipple-2.0.0-mac-x64.zip',
+    'win': 'https://github.com/ripplefox/ripplewallet/releases/download/v2.0.0/FoxletRipple-2.0.0-win-x86.zip',
     'pan': 'https://pan.baidu.com/s/1sosDPDtwbMDhwHdz-1Dh7w'
   };
 
