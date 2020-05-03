@@ -7862,6 +7862,7 @@ h5 {
 }
 .main-container .os-type-checklist {
   padding-left: 5px;
+  margin-bottom: 15px;
 }
 .main-container .os-type-checklist li {
   list-style: none;
@@ -7892,9 +7893,10 @@ h5 {
 .main-container .os-type-checklist li img {
   vertical-align: top;
   margin-right: 15px;
-  width: 45px;
+  /*width: 45px;*/
   height: 50px;
 }
+
 .main-container .os-type-checklist li input {
   margin-right: 15px;
   margin-top: 20px;
@@ -7918,6 +7920,14 @@ h5 {
   margin-bottom: 15px;
   color: #99999A;
 }
+.main-container .download-client-description li {
+  list-style: none;
+  display: block;
+  vertical-align: top;
+  margin-bottom: 5px;
+}
+
+
 .main-container .welcome-ripplepay-container .ripplepay-logo {
   margin-bottom: 30px;
   width: 60%;
@@ -8050,7 +8060,7 @@ header .header-container h1 {
   }
 }
 .footer-container {
-  text-align: center;
+  text-align: left;
   color: #A0A0A0;
   padding-top: 10px;
   padding-bottom: 30px;

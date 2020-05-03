@@ -1,22 +1,14 @@
-
-
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html class="no-js" ng-app="foxhome">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Ripple离钱钱包下载</title>
+        <title translate="head">Ripple离钱钱包下载</title>
         <meta name="description" content="Ripple钱包下载，瑞波离线钱包下载">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 
         <link rel="stylesheet" href="css/main.css">
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-
-        <script src="js/jquery.min.js"></script>
-        <script src="js/main.js"></script>
     </head>
     <body>
 
@@ -24,7 +16,7 @@
               <div class="header-container">
                   <div class="container">
                       <div class="header-logo"></div>
-                      <h1>瑞狐网关 - 资源</h1>
+                      <h1 translate="head">瑞狐网关 - 资源</h1>
                   </div>
               </div>
             </header>
@@ -32,71 +24,63 @@
   <div class="container main-container">
     
     <div class="auth-form-container sign-up-container">
-    
       <div class="auth-form-wrapper">
-        <div class="form-title">下载Ripple离线钱包</div>
-
-        <div class="auth-attention">
-          请选择对应的文件，然后点击“下载”
-        </div>
+        <div class="form-title" translate="downloadwallet">下载离线钱包</div>
         <ul class="os-type-checklist">
-          <li>
-            <input class="option" type="radio" name="optionsRadios" id="win" value="win" checked>
-            <img src="img/win.png">
-            <div class="os-data">
-              <p><strong>Windows版钱包</strong></p>
-              <p>不支持XP系统</p>
-            </div>
+        	 <li>
+	          	<a href="https://pan.baidu.com/s/1sosDPDtwbMDhwHdz-1Dh7w" target="_blank">
+		            <img src="img/pan.jpeg">
+		            <div class="os-data">
+		              <p><strong>百度网盘下载，提取码: iyzp</strong></p>
+		              <p translate="inchina">国内用户下载</p>
+		            </div>
+	           	</a>
+           </li>
+           <li>
+          	 <a href="https://github.com/ripplefox/ripplewallet/releases" target="_blank">
+		            <img src="img/foxripple.png">
+		            <div class="os-data">
+		              <p><strong>Github: Foxlet for Ripple</strong></p>
+		              <p translate="outsidechina">国外用户下载</p>
+		            </div>
+            </a>
           </li>
           <li>
-            <input class="option" type="radio" name="optionsRadios" id="mac" value="mac">
-            <img src="img/mac.png">
-            <div class="os-data">
-              <p><strong>Mac OS X版钱包</strong></p>
-              <p>苹果电脑使用</p>
-            </div>
+          	<a href="https://wallet.stellar.chat" target="_blank">
+	            <img src="img/foxstellar.png">
+	            <div class="os-data">
+	              <p><strong>Github: Foxlet for Stellar</strong></p>
+	              <p translate="outsidechina">国外用户下载</p>
+	            </div>
+           </a>
           </li>
-          <li>
-          	<input class="option" type="radio" name="optionsRadios" id="pan" value="pan">
-            <img src="img/pan.jpeg">
-            <div class="os-data">
-              <p><strong>百度网盘，提取码: iyzp</strong></p>
-              <p>提取码: iyzp</p>
-            </div>
-          </li>
-          
-      <!--     <li>
-            <input class="option" type="radio" name="optionsRadios" id="pdf" value="pdf">
-            <img src="img/pdf.png">
-            <div class="os-data">
-              <p><strong>离线钱包教程</strong></p>
-              <p>pdf格式</p>
-            </div>
-          </li>  --> 
         </ul>
         <div class="download-client-description">
           <ul>
-          	<li>中国网络建议到QQ群文件或百度网盘下载对应钱包。瑞狐QQ群：389185252</li>
-          	<li>钱包最新源码 <a href="https://github.com/ripplefox/ripplewallet" target="_blank">github.com/ripplefox/ripplewallet</a></li>
-            <li>2015年老钱包源码 <a href="https://github.com/ripple/ripple-client-desktop" target="_blank">github.com/ripple/ripple-client-desktop</a></li>
-            <li>一些幸运编译好的<a href="https://github.com/yxxyun/ripple-client-desktop/releases" target="_blank">老钱包版本</a></li>
-            <li><a href="http://jc.ripplefox.com" target="_blank">在线教程</a></li>
+          	<li>反馈意见请加瑞狐QQ群：389185252</li>
+            <li><a href="http://jc.ripplefox.com" target="_blank">在线中文瑞波教程</a></li>
           </ul>
         </div>
-
-
-        <form id="download-btn" class="form-btn-container" action="#">
-          <button class="btn btn-primary">下载</button>
-        </form>
       </div>
+      
     </div>
   </div>
 
-  <footer>
+  <footer ng-controller="LangCtrl">
        <div class="container footer-container">
-           &#169; 2015 <a href="https://ripplefox.com" target="_blank">瑞狐网关</a>
+       		 <span>Copyright &copy; <a href="https://ripplefox.com" target="_blank">RippleFox</a> 2020. All Rights Reserved</span>
+           <span style="float: right;">
+		         		<a href="javascript:" ng-click="changeLanguage('en')" style="margin-right: 10px;"><img src="./img/english.svg" width="32px" title="English" alt="English"></a>
+		         		<a href="javascript:" ng-click="changeLanguage('cn')" ><img src="./img/chinese.svg" width="28px" title="中文" alt="中文"></a>
+					 </span>
        </div>
   </footer>
-        
+  
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://cdn.bootcdn.net/ajax/libs/angular.js/1.7.9/angular.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/angular-translate/2.18.2/angular-translate.min.js"></script>
+	<script src="./js/lang/translate_cn.js"></script>
+	<script src="./js/lang/translate_en.js"></script>
+	<script src="./js/app.js"></script>      
   </body>
 </html>
